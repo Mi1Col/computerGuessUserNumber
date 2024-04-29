@@ -9,7 +9,7 @@ def computerGuess(x):
 
     while feedback != "=":
         guess = random.randint(low, high)
-        feedback = input(f"{guess} is too high(h) or too low(l)? ")
+        feedback = input(f"{guess} is too high(h), too low(l) or correct(=)? ")
 
         if feedback == "h":
             high = guess -1
